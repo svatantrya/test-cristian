@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --pink-light: #f7f8ec;
+  --pink-dark: #e9fc6f;
+  --yellow: #dcfd00;
+  --orange-light: #ccea00;
+  --maroon: #788a00;
+  --dark-blue: rgb(30, 4, 59);
+  --orange: rgb(245, 202, 12);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Previne orice scroll pe orizontală */
+}
+
+.topnav {
+  width: 100%;
+  height: 10%;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/flatease-79932.firebasestorage.app/o/background%2Fchalley.jpg?alt=media&token=1457ed14-bd51-469c-a5fa-5b9c01284b8b");
+  background-size: cover;
+  background-position: center;
+  opacity: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+.title {
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: "../asset/fonts/Quicksand-Light.ttf";
+  padding: 2rem 1.5rem;
+}
+
+/* SPINER CSS */
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid var(--dark-blue);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main-body {
+  width: 100vw;
+  height: 90%;
+  z-index: 1;
+}
+
+.all-flats, .my-favourites {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  align-items: start;
+  padding: 0 1rem;
+}

@@ -1,0 +1,73 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/flatease-79932.firebasestorage.app/o/background%2Fsmart-city.jpg?alt=media&token=ba41d4b1-44d4-4b55-a3a1-f6bb603f69d2");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: rgba(256, 256, 256, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 27rem;
+  height: 90%;
+  max-width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 10000;
+}
+
+input {
+  width: 90%;
+  height: 2rem;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  border-color: bisque;
+  margin-bottom: 0.3rem;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+.ac {
+  width: auto;
+  margin: 0;
+  vertical-align: middle;
+  padding-left: 2.5rem;
+  background-size: 1.5rem;
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/svgs/solid/euro-sign.svg")
+    no-repeat 10px center;
+  text-align: center;
+}
+
+form label {
+  font-size: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+.error {
+  width: 90%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.6rem;
+  color: red;
+  margin-left: 1.1rem;
+  text-align: left;
+}

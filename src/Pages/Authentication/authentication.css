@@ -1,0 +1,60 @@
+.topnav-user {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/flatease-79932.firebasestorage.app/o/background%2Fwp4110657.jpg?alt=media&token=eb745354-0ada-4686-b552-2b64844ed569");
+  background-size: cover;
+  opacity: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 90%;
+  height: 2rem;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  border-color: bisque;
+}
+
+.register-link {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.submit-button,
+.register,
+.submit-form {
+  width: 90%;
+  height: 2rem;
+  background-color: var(--orange-light);
+  color: var(--maroon);
+  font-weight: 800;
+  border-radius: 5px;
+  box-shadow: 3px 3px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s all;
+  margin-bottom: 2rem;
+}
+
+.register {
+  margin-bottom: 2rem;
+}
+
+.submit-button:active,
+.register:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 2px 1px rgba(0, 0, 0, 0.24);
+}
+
+.hide {
+  display: none;
+}
+
+.blur {
+  filter: blur(3px);
+}

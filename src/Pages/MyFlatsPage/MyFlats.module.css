@@ -1,0 +1,34 @@
+.info {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  line-height: 1rem;
+  width: 10rem;
+  height: 3rem;
+  margin-right: 5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Efect de hover pentru buton */
+.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Efect de focus pentru buton */
+btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.4);
+}

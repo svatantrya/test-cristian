@@ -1,0 +1,88 @@
+/* Stil general pentru container */
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1500px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+/* Titlu */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header tabel */
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.header {
+  width: 100%;
+}
+
+.header th {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Elemente rând */
+.elements tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.elements tr:hover {
+  background-color: #f1f1f1;
+}
+
+.elements td {
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Butoane */
+.list-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.list-btn:hover {
+  background-color: #218838;
+}
+
+.tools {
+  width: 100%;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  background-color: aquamarine;
+  gap: 5rem;
+}

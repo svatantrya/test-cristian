@@ -1,0 +1,63 @@
+.sort {
+  height: auto;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.radio-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+label,
+.radio-button label {
+  font-size: 0.9rem;
+  font-weight: normal;
+  display: inline-block;
+  width: auto;
+}
+
+.radio-button label {
+  width: 1rem;
+}
+
+.sort-up,
+.sort-down,
+.delSort {
+  margin-right: 2rem;
+  font-weight: bold;
+  width: 4rem;
+  height: 1.2rem;
+  background-color: burlywood;
+  border-radius: 2px;
+  box-shadow: 3px 3px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s all;
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 2px 1px rgba(0, 0, 0, 0.24);
+}
+
+.sort input {
+  width: 4rem;
+  height: 1rem;
+  vertical-align: middle;
+}
+
+.sort > :first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

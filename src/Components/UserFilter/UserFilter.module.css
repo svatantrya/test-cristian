@@ -1,0 +1,59 @@
+.filters {
+  height: auto;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.filters > :first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btnFilter,
+.delFilter {
+  margin-right: 2rem;
+  font-weight: bold;
+  width: 4rem;
+  height: 1.2rem;
+  background-color: burlywood;
+  border-radius: 2px;
+  box-shadow: 3px 3px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s all;
+}
+
+btnFilter:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 2px 1px rgba(0, 0, 0, 0.24);
+}
+
+.filterGroup {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: normal;
+  display: inline-block;
+  width: auto;
+}
+
+.filters input {
+  width: 7rem;
+  height: 1.3rem;
+  vertical-align: middle;
+  padding: 5px;
+  margin: 0 3px 5px 1px;
+}

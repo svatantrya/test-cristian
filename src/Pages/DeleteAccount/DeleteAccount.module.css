@@ -1,0 +1,51 @@
+/* DeleteAccount.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrează pe axa verticală */
+  justify-content: center; /* Centrează pe axa orizontală */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex; /* Folosește flexbox pentru a alinia butoanele */
+  justify-content: center; /* Centrează butoanele pe axa orizontală */
+  gap: 10px; /* Spațiu între butoane */
+}
+
+.button {
+  background-color: #ff4d4d; /* Culoare roșie pentru butonul de ștergere */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #ff1a1a; /* Culoare mai închisă la hover */
+  transform: scale(1.05); /* Efect de mărire la hover */
+}
+
+.cancel-button {
+  background-color: #ccc; /* Culoare gri pentru butonul de anulare */
+  color: #333;
+}
+
+.cancel-button:hover {
+  background-color: #bbb; /* Culoare mai închisă la hover */
+}

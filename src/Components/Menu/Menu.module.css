@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+/* Meniu vizibil (desktop) */
+.menu {
+  margin-top: 1vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0.3rem;
+}
+
+.base,
+.active {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: azure;
+  padding: 0.5rem 0.7rem;
+  transition: color 0.3s ease, border-top 0.3s ease;
+}
+
+.active {
+  color: blanchedalmond;
+  border-top: 2px solid white;
+}
+
+/* Butonul Hamburger */
+.menu-button {
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: aqua;
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 1500;
+}
+
+/* Stiluri pentru ecrane mai mici */
+@media only screen and (max-width: 991px) {
+  /* Ascundem meniul pe orizontală */
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    position: absolute;
+    top: 4rem;
+    right: 1rem; /* Poziționează meniul în dreapta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+    z-index: 1000;
+    display: flex;
+    gap: 1rem;
+    width: 200px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  /* Dacă meniul este vizibil */
+  .menu.menu-visible {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* Stilurile elementelor din meniu */
+  .menu li {
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu li a {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: beige;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: rgb(10, 1, 56);
+    padding: 1rem;
+    text-align: left;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .menu li a:hover {
+    background-color: lightblue;
+    transform: translateX(5px);
+  }
+
+  .all-flats, .my-favourites {
+    grid-template-columns: 1fr; /* Cardurile ocupă întreaga lățime */
+    gap: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .digit-format {
+    font-weight: bold;
+  }
+}
