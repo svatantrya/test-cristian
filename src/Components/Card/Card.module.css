@@ -1,22 +1,25 @@
 /* Wrapper pentru toate cardurile */
 container {
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 1rem;
   padding: 2rem;
 }
 
 /* Card individual */
 .card {
-  width: 28rem;
-  height: 25rem;
-  min-width: 20rem;
+  flex: 1 1 calc(25% - 2rem); /* 5 carduri pe rând */
+  max-width: 24rem;
+  min-width: 22rem;
+  height: 30rem;
   padding: 0.5rem;
   border-radius: 10px;
   overflow: hidden;
   border: 0.5px solid var(--dark-blue);
   box-shadow: 2px 1px 5px rgb(148, 147, 147);
-  cursor: pointer;
   transition: 0.5s ease;
 }
 
@@ -42,22 +45,26 @@ container {
   width: 100%;
   padding: 0.7rem;
   display: flex;
-  gap: 10px;
+  gap: 1rem;
   font-size: 0.8rem;
   font-weight: bold;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 
 .info .location {
-  width: 40%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .info .info-flat {
-  width: 40%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 button {

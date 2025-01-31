@@ -57,9 +57,7 @@ const Home = () => {
         ) : (
             <div className="all-flats">
               {(displayedApartments).map((flat, index) => (
-                <div key={index} className={styles.card}>
-                  <Card flat={flat} showTrash={true} onDelete={handleDelete}/>
-                </div>
+                <Card key={index} flat={flat} showTrash={true} onDelete={handleDelete}/>
               ))}
             </div> 
             )

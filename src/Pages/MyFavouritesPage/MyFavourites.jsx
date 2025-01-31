@@ -18,12 +18,11 @@ const MyFavourites = () => {
           ) : (
             <div className="my-favourites">
               {favourites.map((flat, index) => (
-                <div key={index}>
                   <Card
+                    key={index}
                     flat={flat}
                     showTrash={false}
                   />
-                </div>
               ))}
             </div>
           )
