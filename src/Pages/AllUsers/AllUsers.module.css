@@ -86,3 +86,40 @@ thead {
   background-color: aquamarine;
   gap: 5rem;
 }
+
+@media (max-width: 850px) {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    display: none;
+  }
+  
+  tbody tr {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+  }
+  
+  tbody td:last-child {
+    border-bottom: none;
+  }
+}
+

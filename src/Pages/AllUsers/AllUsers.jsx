@@ -88,13 +88,13 @@ const ListUsers = () => {
         <tbody className={styles.elements}>
           {filteredUsers.map((user) => (
             <tr key={user.uid}>
-              <td>{user.firstName}</td>
-              <td>{user.lastName}</td>
-              <td>{user.email}</td>
-              <td>{user.birthDate}</td>
-              <td>{user.flats.length}</td>
-              <td>{user.isAdmin ? "Yes" : "No"}</td>
-              <td>
+              <td data-label = "First Name">{user.firstName}</td>
+              <td data-label = "Last Name">{user.lastName}</td>
+              <td data-label = "User Email">{user.email}</td>
+              <td data-label = "User Birth Day">{user.birthDate}</td>
+              <td data-label = "Number Of Flats">{user.flats.length}</td>
+              <td data-label = "Is Admin?">{user.isAdmin ? "Yes" : "No"}</td>
+              <td data-label = "Toggle Admin">
                 <button
                   className={styles["list-btn"]}
                   onClick={() => handleToggleAdmin(user.uid, user.isAdmin)}
@@ -102,7 +102,7 @@ const ListUsers = () => {
                   Toggle Admin
                 </button>
               </td>
-              <td>
+              <td data-label = "Edit User">
                 <button
                   className={styles["list-btn"]}
                   onClick={() => handleEditUser(user.uid)}
@@ -110,7 +110,7 @@ const ListUsers = () => {
                   Edit User
                 </button>
               </td>
-              <td>
+              <td data-label = "Delete User">
                 <button
                   className={styles["list-btn"]}
                   onClick={() => handleDeleteUser(user.uid)}
