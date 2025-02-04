@@ -21,7 +21,7 @@
   margin-right: 2rem;
   font-weight: bold;
   width: 4rem;
-  height: 1.2rem;
+  height: 1.4rem;
   background-color: burlywood;
   border-radius: 2px;
   box-shadow: 3px 3px;
@@ -44,16 +44,20 @@ btnFilter:active {
 }
 
 label {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: normal;
   display: inline-block;
   width: auto;
 }
 
-.filters input {
+.filters input, select {
   width: 7rem;
-  height: 1.3rem;
+  height: 1.5rem;
   vertical-align: middle;
-  padding: 5px;
+  padding: 0 5px;
   margin: 0 3px 5px 1px;
+}
+
+.filters select {
+  width: 4rem;
 }

@@ -20,7 +20,7 @@
 
 label,
 .radio-button label {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: normal;
   display: inline-block;
   width: auto;
@@ -36,7 +36,7 @@ label,
   margin-right: 2rem;
   font-weight: bold;
   width: 4rem;
-  height: 1.2rem;
+  height: 1.4rem;
   background-color: burlywood;
   border-radius: 2px;
   box-shadow: 3px 3px;
@@ -50,10 +50,11 @@ button:active {
   box-shadow: 3px 2px 2px 1px rgba(0, 0, 0, 0.24);
 }
 
-.sort input {
-  width: 2.5rem;
-  height: 1rem;
+.sort select {
+  width: 7rem;
+  height: 1.5rem;
   vertical-align: middle;
+  padding: 0 5px;
 }
 
 .sort > :first-child {

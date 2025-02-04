@@ -123,6 +123,7 @@ const FlatView = () => {
 
   const toggleMessageForm = () => {
     setIsMessageFormVisible((prev) => !prev);
+    setMyMessagesVisibility(false);
   };
 
   const readMessages = () => {
@@ -133,6 +134,7 @@ const FlatView = () => {
     const myOwnMessages = (messages || []).filter((message) => message.id === user.uid);
     setMyMessages(myOwnMessages);
     setMyMessagesVisibility((prev) => !prev);
+    setIsMessageFormVisible(false);
   };
 
   return (

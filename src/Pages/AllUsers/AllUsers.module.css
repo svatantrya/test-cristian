@@ -1,20 +1,20 @@
 /* Stil general pentru container */
 .container {
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 1500px;
+  margin: 1.2rem auto;
+  padding: 1.2rem;
+  max-width: 90rem;
   background-color: #f9f9f9;
-  border-radius: 10px;
+  border-radius: .8rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-family: "Arial", sans-serif;
 }
 
 /* Titlu */
 .title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 1.4rem;
   text-align: center;
 }
 
@@ -23,7 +23,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: .5rem;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -39,9 +39,9 @@ thead {
 }
 
 .header th {
-  padding: 15px;
+  padding: .95rem;
   text-align: left;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /* Elemente rând */
@@ -54,18 +54,19 @@ thead {
 }
 
 .elements td {
-  padding: 12px;
+  padding: .7rem;
   text-align: left;
-  font-size: 14px;
+  font-size: .9rem;
   color: #555;
 }
 
 /* Butoane */
 .list-btn {
-  padding: 8px 12px;
-  font-size: 14px;
+  width: 7rem;
+  padding: .5rem;
+  font-size: .9rem;
   border: none;
-  border-radius: 5px;
+  border-radius: .3rem;
   cursor: pointer;
   background-color: #28a745;
   color: white;
@@ -87,7 +88,7 @@ thead {
   gap: 5rem;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 970px) {
   table {
     width: 100%;
     border-collapse: collapse;
@@ -107,7 +108,7 @@ thead {
   tbody td {
     display: flex;
     justify-content: space-between;
-    padding: 8px;
+    padding: .5rem;
     border-bottom: 1px solid #ddd;
   }
   
